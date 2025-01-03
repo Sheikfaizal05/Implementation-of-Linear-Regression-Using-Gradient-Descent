@@ -22,8 +22,7 @@ Developed by:SHEIK FAIZAL S
 RegisterNumber:24900982
 */
 ```
-```
-import numpy as np
+```import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -65,11 +64,13 @@ new_data_scaled = scaler.transform(ct.transform(new_data))
 new_prediction = np.dot(np.append(1, new_data_scaled), theta)
 
 print(f"Predicted value: {new_prediction[0]}")
+data.head()
 ```
 
 
 ## Output:
-Predicted value: 193075.97426510364
+![Screenshot 2025-01-03 234837](https://github.com/user-attachments/assets/63a467c9-d283-4087-94ac-67a13c4162fd)
+
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
